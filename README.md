@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Onmaynec — software developer" />
-</p>
-
-<p align="center">
   <a href="https://github.com/Onmaynec?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-EXPLORE-112334?style=flat-square&amp;logo=github&amp;logoColor=white&amp;labelColor=183546" alt="Мои репозитории" /></a>
   <a href="https://github.com/Onmaynec"><img src="https://img.shields.io/github/followers/Onmaynec?style=flat-square&amp;label=FOLLOWERS&amp;logo=github&amp;color=26bda9" alt="Подписчики GitHub" /></a>
   <img src="https://img.shields.io/badge/FOCUS-SYSTEMS%20%26%20SOFTWARE-209d93?style=flat-square&amp;labelColor=183546" alt="Systems and software" />
