@@ -56,7 +56,6 @@
   </picture>
 </p>
 
-<p align="center"><sub>Анимация строится по графику вкладов GitHub и обновляется через GitHub Actions.</sub></p>
 
 ---
 
