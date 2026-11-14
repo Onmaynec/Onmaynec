@@ -53,7 +53,7 @@ export function decorateSvg(svg, theme) {
   const defs = `<defs id="profile-snake-skin"><linearGradient id="snake-panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${c.panelA}"/><stop offset="100%" stop-color="${c.panelB}"/></linearGradient><linearGradient id="snake-accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${c.accent}"/><stop offset="100%" stop-color="${c.glow}"/></linearGradient></defs>`;
   svg = svg.replace(/(<svg\b[^>]*>)/, "$1" + defs);
   svg = svg.replace(/<rect class="c([^"]*)"([^>]*?)\/>/g, (_, classes, attrs) =>
-    `<rect class="c${classes}"${attrs.replace(/rx="2"/, 'rx="3.2"').replace(/ry="2"/, 'ry="3.2')}/>`);
+    `<rect class="c${classes}"${attrs.replace(/rx="2"/, 'rx="3.2"').replace(/ry="2"/, 'ry="3.2"')}/>`);
   const css = `
     .s.s0{fill:${c.segments[0]};filter:drop-shadow(0 0 4px ${c.glow});}
     .s.s1{fill:${c.segments[1]};filter:drop-shadow(0 0 2px ${c.glow});}
