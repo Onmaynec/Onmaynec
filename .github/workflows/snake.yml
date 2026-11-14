@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/snake.yml'
+      - 'scripts/decorate-snake.mjs'
 
 permissions:
   contents: write
@@ -21,13 +22,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Checkout profile files
+        uses: actions/checkout@v4
+
       - name: Generate animated contribution graphs
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Onmaynec
           outputs: |
-            dist/snake-dark.svg?palette=github-dark&color_snake=#B69BFF&color_dots=#172331,#18483F,#1A7567,#32B79D,#6EF1D6
-            dist/snake-light.svg?palette=github-light&color_snake=#7658D6&color_dots=#EDF2F7,#CDEFE7,#95DCCB,#4ABDA5,#078F79
+            dist/snake-dark.svg?palette=github-dark&color_snake=#AE96FF&color_dots=#131D2E,#1C3745,#275F72,#2BADA7,#9BF4E8
+            dist/snake-light.svg?palette=github-light&color_snake=#755BE8&color_dots=#E8F0F7,#CBE6E8,#8ED5D2,#43B7AF,#0E868C
+
+      - name: Style animation panels
+        run: node scripts/decorate-snake.mjs
 
       - name: Publish animations
         uses: crazy-max/ghaction-github-pages@v5
